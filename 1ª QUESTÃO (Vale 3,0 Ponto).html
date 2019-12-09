@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 1ª QUESTÃO (Vale 3,0 Ponto)</title>
+    </head>
+
+    <body onload="alert('Seja Bem Vindo!!')">
+        <h1>1ª QUESTÃO (Vale 3,0 Ponto)</h1>
+        <div id="formulario">
+            <label>Informe seu nome e clique em Adicionar<br /></label>
+            <input type="text" id="Nome">
+            <button type="submit" onClick="document.getElementById('nomeform').innerHTML = Nome.value;">Adicionar</button>
+        </div>
+        <div>
+          O nome informado foi:   
+        </div>
+        <div id="nomeform"><br>
+        </div>
+
+        <br />
+
+        Selecione o Mês
+        <div id="Select">
+        <Select name="select" onChange="document.getElementById('mesEscolhido').innerHTML = this.value;">
+        <option></option>
+        <option>Janeiro</option>
+        <option>Fevereiro</option>
+        <option>Março</option>
+        <option>Abril</option>
+        </Select>
+        </div>
+        <div>
+            O Mês escolhido foi: <br />
+        </div>
+        <div id="mesEscolhido">
+
+        </div>
+    </body>
+</html>
